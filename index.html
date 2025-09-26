@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://static.readdy.ai/static/e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Business Services - Book Your Appointment Today</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#57b5e7',
+                        secondary: '#8dd3c7'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <header class="w-full bg-white/95 backdrop-blur-sm fixed top-0 z-50 shadow-sm">
+        <nav class="w-full px-6 py-4">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <div class="font-['Pacifico'] text-2xl text-gray-900">logo</div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                    <button class="bg-primary text-white px-6 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">Book Now</button>
+                </div>
+                <button class="md:hidden w-8 h-8 flex items-center justify-center">
+                    <i class="ri-menu-line text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section class="relative min-h-screen flex items-center justify-center overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=Modern%20professional%20business%20office%20environment%20with%20clean%20minimalist%20design%2C%20soft%20natural%20lighting%20streaming%20through%20large%20windows%2C%20contemporary%20workspace%20with%20elegant%20furniture%2C%20neutral%20color%20palette%20with%20white%20and%20light%20gray%20tones%2C%20professional%20atmosphere%20with%20subtle%20technology%20elements%2C%20high-end%20corporate%20setting%20with%20sophisticated%20interior%20design%2C%20spacious%20open%20layout%20with%20geometric%20patterns%2C%20premium%20quality%20business%20environment&width=1920&height=1080&seq=hero001&orientation=landscape'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-white/20"></div>
+            <div class="relative z-10 w-full">
+                <div class="max-w-7xl mx-auto px-6">
+                    <div class="max-w-2xl">
+                        <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">Transform Your Business with Professional Excellence</h1>
+                        <p class="text-xl text-gray-700 mb-8 leading-relaxed">Experience premium business services tailored to your needs. Our expert team delivers exceptional results with personalized attention and cutting-edge solutions.</p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button class="bg-primary text-white px-8 py-4 !rounded-button whitespace-nowrap text-lg font-semibold hover:bg-primary/90 transition-colors">Book Consultation</button>
+                            <button class="border-2 border-gray-900 text-gray-900 px-8 py-4 !rounded-button whitespace-nowrap text-lg font-semibold hover:bg-gray-900 hover:text-white transition-colors">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="py-20 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Book Your Appointment</h2>
+                    <p class="text-xl text-gray-600">Schedule your consultation with our expert team</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Select Service & Time</h3>
+                            <div class="space-y-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Service Type</label>
+                                    <div class="relative">
+                                        <button class="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-left flex items-center justify-between hover:border-primary transition-colors">
+                                            <span class="text-gray-900">Business Consultation</span>
+                                            <i class="ri-arrow-down-s-line w-5 h-5 flex items-center justify-center"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Date</label>
+                                    <div class="relative">
+                                        <input type="date" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 hover:border-primary focus:border-primary focus:outline-none transition-colors">
+                                        <i class="ri-calendar-line absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-400"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Available Times</label>
+                                    <div class="grid grid-cols-3 gap-2">
+                                        <button class="border border-gray-300 rounded-lg py-2 text-sm hover:border-primary hover:bg-primary hover:text-white transition-colors">9:00 AM</button>
+                                        <button class="border border-gray-300 rounded-lg py-2 text-sm hover:border-primary hover:bg-primary hover:text-white transition-colors">11:00 AM</button>
+                                        <button class="border border-gray-300 rounded-lg py-2 text-sm hover:border-primary hover:bg-primary hover:text-white transition-colors">2:00 PM</button>
+                                        <button class="border border-gray-300 rounded-lg py-2 text-sm hover:border-primary hover:bg-primary hover:text-white transition-colors">3:30 PM</button>
+                                        <button class="border border-gray-300 rounded-lg py-2 text-sm hover:border-primary hover:bg-primary hover:text-white transition-colors">5:00 PM</button>
+                                        <button class="border border-gray-300 rounded-lg py-2 text-sm text-gray-400 cursor-not-allowed">6:30 PM</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Your Information</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 hover:border-primary focus:border-primary focus:outline-none transition-colors" placeholder="Enter your full name">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 hover:border-primary focus:border-primary focus:outline-none transition-colors" placeholder="your.email@example.com">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 hover:border-primary focus:border-primary focus:outline-none transition-colors" placeholder="+1 (555) 123-4567">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Additional Notes</label>
+                                    <textarea class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 hover:border-primary focus:border-primary focus:outline-none transition-colors h-24 resize-none" placeholder="Tell us about your specific needs..."></textarea>
+                                </div>
+                            </div>
+                            <button class="w-full bg-primary text-white py-4 !rounded-button whitespace-nowrap text-lg font-semibold hover:bg-primary/90 transition-colors mt-6">Confirm Booking</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Premium Services</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Comprehensive business solutions designed to elevate your success and drive sustainable growth</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Professional%20business%20strategy%20consultation%20meeting%20with%20modern%20conference%20room%20setting%2C%20executive%20team%20discussing%20plans%20around%20sleek%20table%2C%20contemporary%20office%20environment%20with%20glass%20walls%2C%20sophisticated%20corporate%20atmosphere%2C%20clean%20minimalist%20design%20with%20neutral%20colors%2C%20high-end%20business%20consulting%20visualization&width=400&height=300&seq=service001&orientation=landscape')"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Strategic Consulting</h3>
+                            <p class="text-gray-600 mb-4">Transform your business with expert strategic guidance and actionable insights tailored to your industry.</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">$299</span>
+                                <span class="text-sm text-gray-500">90 minutes</span>
+                            </div>
+                            <button class="w-full bg-primary text-white py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-primary/90 transition-colors">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Digital%20transformation%20technology%20workspace%20with%20modern%20computers%2C%20innovative%20software%20interfaces%2C%20sleek%20office%20environment%20with%20contemporary%20design%2C%20professional%20tech%20consulting%20atmosphere%2C%20clean%20minimalist%20setup%20with%20blue%20accent%20lighting%2C%20high-tech%20business%20solutions%20visualization&width=400&height=300&seq=service002&orientation=landscape')"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Digital Transformation</h3>
+                            <p class="text-gray-600 mb-4">Modernize your operations with cutting-edge technology solutions and digital workflow optimization.</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">$499</span>
+                                <span class="text-sm text-gray-500">2 hours</span>
+                            </div>
+                            <button class="w-full bg-primary text-white py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-primary/90 transition-colors">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Financial%20planning%20and%20analysis%20workspace%20with%20professional%20charts%2C%20modern%20calculator%20and%20documents%2C%20sophisticated%20office%20environment%20with%20elegant%20design%2C%20business%20financial%20consulting%20atmosphere%2C%20clean%20organized%20desk%20setup%20with%20premium%20materials%2C%20corporate%20finance%20visualization&width=400&height=300&seq=service003&orientation=landscape')"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Financial Planning</h3>
+                            <p class="text-gray-600 mb-4">Optimize your financial strategy with comprehensive planning and risk management solutions.</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">$399</span>
+                                <span class="text-sm text-gray-500">75 minutes</span>
+                            </div>
+                            <button class="w-full bg-primary text-white py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-primary/90 transition-colors">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Marketing%20strategy%20brainstorming%20session%20with%20creative%20team%2C%20modern%20advertising%20agency%20office%20with%20colorful%20brand%20materials%2C%20contemporary%20workspace%20with%20innovative%20design%20elements%2C%20professional%20marketing%20consulting%20environment%2C%20clean%20artistic%20setup%20with%20brand%20identity%20visuals&width=400&height=300&seq=service004&orientation=landscape')"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Marketing Strategy</h3>
+                            <p class="text-gray-600 mb-4">Amplify your brand presence with data-driven marketing strategies and creative campaign development.</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">$349</span>
+                                <span class="text-sm text-gray-500">90 minutes</span>
+                            </div>
+                            <button class="w-full bg-primary text-white py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-primary/90 transition-colors">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Operations%20management%20workflow%20optimization%20with%20efficient%20processes%2C%20modern%20industrial%20office%20environment%2C%20professional%20operations%20consulting%20setup%20with%20systematic%20organization%2C%20clean%20contemporary%20workspace%20with%20productivity%20tools%2C%20streamlined%20business%20operations%20visualization&width=400&height=300&seq=service005&orientation=landscape')"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Operations Optimization</h3>
+                            <p class="text-gray-600 mb-4">Streamline your processes and improve efficiency with comprehensive operational analysis and solutions.</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">$449</span>
+                                <span class="text-sm text-gray-500">2 hours</span>
+                            </div>
+                            <button class="w-full bg-primary text-white py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-primary/90 transition-colors">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Leadership%20development%20training%20session%20with%20professional%20executives%2C%20modern%20corporate%20training%20room%20with%20sophisticated%20presentation%20setup%2C%20contemporary%20business%20education%20environment%2C%20clean%20minimalist%20design%20with%20inspiring%20atmosphere%2C%20executive%20coaching%20visualization&width=400&height=300&seq=service006&orientation=landscape')"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Leadership Development</h3>
+                            <p class="text-gray-600 mb-4">Enhance leadership capabilities with personalized coaching and strategic development programs.</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">$599</span>
+                                <span class="text-sm text-gray-500">3 hours</span>
+                            </div>
+                            <button class="w-full bg-primary text-white py-3 !rounded-button whitespace-nowrap font-semibold hover:bg-primary/90 transition-colors">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-4xl font-bold text-gray-900 mb-6">Excellence in Business Solutions Since 2010</h2>
+                        <p class="text-lg text-gray-600 mb-6">We are a team of experienced professionals dedicated to helping businesses achieve their full potential. With over a decade of industry expertise, we've successfully guided hundreds of companies through transformational growth.</p>
+                        <p class="text-lg text-gray-600 mb-8">Our approach combines strategic thinking with practical implementation, ensuring that every solution we deliver creates measurable value for our clients.</p>
+                        <div class="grid grid-cols-3 gap-8 mb-8">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-primary mb-2">500+</div>
+                                <div class="text-sm text-gray-600">Projects Completed</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-primary mb-2">98%</div>
+                                <div class="text-sm text-gray-600">Client Satisfaction</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-primary mb-2">15+</div>
+                                <div class="text-sm text-gray-600">Years Experience</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="flex items-center space-x-2">
+                                <i class="ri-award-line w-5 h-5 flex items-center justify-center text-primary"></i>
+                                <span class="text-sm text-gray-600">ISO 9001 Certified</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="ri-shield-check-line w-5 h-5 flex items-center justify-center text-primary"></i>
+                                <span class="text-sm text-gray-600">Industry Leader</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="ri-global-line w-5 h-5 flex items-center justify-center text-primary"></i>
+                                <span class="text-sm text-gray-600">Global Reach</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-2xl p-6 shadow-lg">
+                                <div class="w-16 h-16 bg-cover bg-center rounded-full mb-4" style="background-image: url('https://readdy.ai/api/search-image?query=Professional%20business%20executive%20portrait%20with%20confident%20expression%2C%20modern%20corporate%20headshot%20with%20clean%20background%2C%20sophisticated%20business%20leader%20in%20formal%20attire%2C%20contemporary%20professional%20photography%20style%2C%20high-quality%20corporate%20portrait%20with%20neutral%20lighting&width=200&height=200&seq=team001&orientation=squarish')"></div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Sarah Mitchell</h4>
+                                <p class="text-sm text-gray-600 mb-2">CEO & Founder</p>
+                                <p class="text-xs text-gray-500">15+ years in strategic consulting</p>
+                            </div>
+                            <div class="bg-white rounded-2xl p-6 shadow-lg">
+                                <div class="w-16 h-16 bg-cover bg-center rounded-full mb-4" style="background-image: url('https://readdy.ai/api/search-image?query=Professional%20business%20executive%20portrait%20with%20approachable%20demeanor%2C%20modern%20corporate%20headshot%20with%20clean%20background%2C%20experienced%20business%20consultant%20in%20professional%20attire%2C%20contemporary%20business%20photography%20style%2C%20high-quality%20executive%20portrait%20with%20soft%20lighting&width=200&height=200&seq=team002&orientation=squarish')"></div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Michael Chen</h4>
+                                <p class="text-sm text-gray-600 mb-2">Strategy Director</p>
+                                <p class="text-xs text-gray-500">12+ years in business transformation</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4 mt-8">
+                            <div class="bg-white rounded-2xl p-6 shadow-lg">
+                                <div class="w-16 h-16 bg-cover bg-center rounded-full mb-4" style="background-image: url('https://readdy.ai/api/search-image?query=Professional%20business%20executive%20portrait%20with%20warm%20smile%2C%20modern%20corporate%20headshot%20with%20clean%20background%2C%20skilled%20business%20advisor%20in%20elegant%20attire%2C%20contemporary%20professional%20photography%20style%2C%20high-quality%20corporate%20portrait%20with%20natural%20lighting&width=200&height=200&seq=team003&orientation=squarish')"></div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Emily Rodriguez</h4>
+                                <p class="text-sm text-gray-600 mb-2">Operations Lead</p>
+                                <p class="text-xs text-gray-500">10+ years in process optimization</p>
+                            </div>
+                            <div class="bg-white rounded-2xl p-6 shadow-lg">
+                                <div class="w-16 h-16 bg-cover bg-center rounded-full mb-4" style="background-image: url('https://readdy.ai/api/search-image?query=Professional%20business%20executive%20portrait%20with%20confident%20stance%2C%20modern%20corporate%20headshot%20with%20clean%20background%2C%20experienced%20technology%20consultant%20in%20formal%20attire%2C%20contemporary%20business%20photography%20style%2C%20high-quality%20executive%20portrait%20with%20professional%20lighting&width=200&height=200&seq=team004&orientation=squarish')"></div>
+                                <h4 class="font-semibold text-gray-900 mb-1">David Thompson</h4>
+                                <p class="text-sm text-gray-600 mb-2">Tech Advisor</p>
+                                <p class="text-xs text-gray-500">8+ years in digital transformation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+                    <p class="text-xl text-gray-600">Trusted by industry leaders worldwide</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="ri-star-fill w-5 h-5 flex items-center justify-center"></i>
+                                <i class="ri-star-fill w-5 h-5 flex items-center justify-center"></i>
+                                <i class="ri-star-fill w-5 h-5 flex items-center justify-center"></i>
+                                <i class="ri-star-fill w-5 h-5 flex items-center justify-center"></i>
+                                <i class="ri-star-fill w-5 h-5 flex items-center justify-center"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">"The strategic consulting service transformed our entire business approach. Revenue increased by 40% within six months of implementation."</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-cover bg-center rounded-full mr-4" style="background-image: url('https://readdy.ai/api/search-image?query=Professional%20business%20client%20portrait%20with%20satisfied%20expression%2C%20modern%20corporate%20headshot%20with%20clean%20background%2C%20successful%20business%20owner%20in%20professional%20attire%2C%20contemporary%20client%20testimonial%20photography%20style%2C%20high-quality%20portrait%20with%20confident%20demeanor&width=150&height=150&seq=client001&orientation=squarish')"></div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Jessica Adams</div>
+                                <div class="text-sm text-gray-600">CEO, TechFlow Solutions</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="ri-star-fill w-5 h-5 flex items-center justify-center"></i>
+                                <i class="ri-star-fill w-5 h-5 flex items-center justify-center"></i>
+                                <i class="ri-star-fill w-5 h-5 flex items-center justify-center"></i>
+                                <i class="ri-star-fill w-5 h-5 flex items-center justify-center"></i>
+                                <i class="ri-star-fill w-5 h-5 flex items-center justify-center"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">"Outstanding digital transformation guidance. The team's expertise helped us modernize our operations seamlessly and efficiently."</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-cover bg-center rounded-full mr-4" style="background-image: url('https://readdy.ai/api/search-image?query=Professional%20business%20client%20portrait%20with%20pleased%20expression%2C%20modern%20corporate%20headshot%20with%20clean%20background%2C%20accomplished%20business%20executive%20in%20formal%20attire%2C%20contemporary%20testimonial%20photography%20style%2C%20high-quality%20portrait%20with%20professional%20appearance&width=150&height=150&seq=client002&orientation=squarish')"></div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Robert Kim</div>
+                                <div class="text-sm text-gray-600">Director, Global Industries</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="ri-star-fill w-5 h-5 flex items-center justify-center"></i>
+                                <i class="ri-star-fill w-5 h-5 flex items-center justify-center"></i>
+                                <i class="ri-star-fill w-5 h-5 flex items-center justify-center"></i>
+                                <i class="ri-star-fill w-5 h-5 flex items-center justify-center"></i>
+                                <i class="ri-star-fill w-5 h-5 flex items-center justify-center"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">"Exceptional financial planning service. Their insights helped us optimize our budget and achieve sustainable growth targets."</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-cover bg-center rounded-full mr-4" style="background-image: url('https://readdy.ai/api/search-image?query=Professional%20business%20client%20portrait%20with%20happy%20expression%2C%20modern%20corporate%20headshot%20with%20clean%20background%2C%20successful%20entrepreneur%20in%20business%20attire%2C%20contemporary%20client%20testimonial%20photography%20style%2C%20high-quality%20portrait%20with%20approachable%20demeanor&width=150&height=150&seq=client003&orientation=squarish')"></div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Maria Gonzalez</div>
+                                <div class="text-sm text-gray-600">Founder, Innovative Ventures</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <div class="flex items-center justify-center space-x-8">
+                        <div class="flex items-center space-x-2">
+                            <i class="ri-microsoft-fill w-8 h-8 flex items-center justify-center text-gray-400"></i>
+                            <span class="text-gray-600 font-medium">Microsoft</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="ri-google-fill w-8 h-8 flex items-center justify-center text-gray-400"></i>
+                            <span class="text-gray-600 font-medium">Google</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="ri-amazon-fill w-8 h-8 flex items-center justify-center text-gray-400"></i>
+                            <span class="text-gray-600 font-medium">Amazon</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="ri-apple-fill w-8 h-8 flex items-center justify-center text-gray-400"></i>
+                            <span class="text-gray-600 font-medium">Apple</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+                    <p class="text-xl text-gray-600">Ready to transform your business? Let's start the conversation.</p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-16">
+                    <div>
+                        <div class="bg-white rounded-2xl p-8 shadow-lg">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Send us a Message</h3>
+                            <div class="space-y-4">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <input type="text" placeholder="First Name" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 hover:border-primary focus:border-primary focus:outline-none transition-colors">
+                                    <input type="text" placeholder="Last Name" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 hover:border-primary focus:border-primary focus:outline-none transition-colors">
+                                </div>
+                                <input type="email" placeholder="Email Address" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 hover:border-primary focus:border-primary focus:outline-none transition-colors">
+                                <input type="tel" placeholder="Phone Number" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 hover:border-primary focus:border-primary focus:outline-none transition-colors">
+                                <div class="relative">
+                                    <button class="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-left flex items-center justify-between hover:border-primary transition-colors">
+                                        <span class="text-gray-500">Select Service Interest</span>
+                                        <i class="ri-arrow-down-s-line w-5 h-5 flex items-center justify-center"></i>
+                                    </button>
+                                </div>
+                                <textarea placeholder="Tell us about your project..." class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 hover:border-primary focus:border-primary focus:outline-none transition-colors h-32 resize-none"></textarea>
+                                <button class="w-full bg-primary text-white py-4 !rounded-button whitespace-nowrap text-lg font-semibold hover:bg-primary/90 transition-colors">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Contact Information</h3>
+                            <div class="space-y-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                        <i class="ri-phone-line w-6 h-6 flex items-center justify-center text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900 mb-1">Phone</div>
+                                        <div class="text-gray-600">+1 (555) 123-4567</div>
+                                        <div class="text-gray-600">+1 (555) 987-6543</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                        <i class="ri-mail-line w-6 h-6 flex items-center justify-center text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900 mb-1">Email</div>
+                                        <div class="text-gray-600">hello@businesspro.com</div>
+                                        <div class="text-gray-600">support@businesspro.com</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                        <i class="ri-map-pin-line w-6 h-6 flex items-center justify-center text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900 mb-1">Address</div>
+                                        <div class="text-gray-600">123 Business Avenue<br>Suite 456<br>New York, NY 10001</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                        <i class="ri-time-line w-6 h-6 flex items-center justify-center text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900 mb-1">Business Hours</div>
+                                        <div class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                            <div class="h-64 bg-center bg-cover" style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png')"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-primary">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-white mb-6">Ready to Transform Your Business?</h2>
+                <p class="text-xl text-white/90 mb-8">Join hundreds of successful companies that have achieved exceptional growth with our expert guidance.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-primary px-8 py-4 !rounded-button whitespace-nowrap text-lg font-semibold hover:bg-gray-50 transition-colors">Schedule Free Consultation</button>
+                    <button class="border-2 border-white text-white px-8 py-4 !rounded-button whitespace-nowrap text-lg font-semibold hover:bg-white hover:text-primary transition-colors">View Our Portfolio</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="font-['Pacifico'] text-2xl mb-6">logo</div>
+                    <p class="text-gray-400 mb-6">Transforming businesses through strategic excellence and innovative solutions. Your success is our mission.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-facebook-fill w-5 h-5 flex items-center justify-center"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-twitter-fill w-5 h-5 flex items-center justify-center"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-linkedin-fill w-5 h-5 flex items-center justify-center"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-instagram-line w-5 h-5 flex items-center justify-center"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Strategic Consulting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Digital Transformation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Financial Planning</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Marketing Strategy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Operations Optimization</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest insights and industry trends.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Enter your email" class="flex-1 bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white text-sm hover:border-primary focus:border-primary focus:outline-none transition-colors">
+                        <button class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap text-sm font-semibold hover:bg-primary/90 transition-colors">Subscribe</button>
+                    </div>
+                    <div class="flex items-center space-x-4 mt-6">
+                        <i class="ri-visa-fill w-8 h-8 flex items-center justify-center text-gray-400"></i>
+                        <i class="ri-paypal-fill w-8 h-8 flex items-center justify-center text-gray-400"></i>
+                        <i class="ri-mastercard-fill w-8 h-8 flex items-center justify-center text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">© 2024 BusinessPro. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script id="mobile-menu">
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('header button');
+            const nav = document.querySelector('nav');
+
+            if (menuButton) {
+                menuButton.addEventListener('click', function() {
+                    const mobileMenu = document.querySelector('.mobile-menu');
+                    if (mobileMenu) {
+                        mobileMenu.classList.toggle('hidden');
+                    } else {
+                        const menu = document.createElement('div');
+                        menu.className = 'mobile-menu absolute top-full left-0 w-full bg-white shadow-lg md:hidden';
+                        menu.innerHTML = `
+                            <div class="px-6 py-4 space-y-4">
+                                <a href="#" class="block text-gray-700 hover:text-primary transition-colors">Home</a>
+                                <a href="#services" class="block text-gray-700 hover:text-primary transition-colors">Services</a>
+                                <a href="#about" class="block text-gray-700 hover:text-primary transition-colors">About</a>
+                                <a href="#contact" class="block text-gray-700 hover:text-primary transition-colors">Contact</a>
+                                <button class="w-full bg-primary text-white px-6 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">Book Now</button>
+                            </div>
+                        `;
+                        nav.appendChild(menu);
+                    }
+                });
+            }
+        });
+    </script>
+
+    <script id="booking-functionality">
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceButtons = document.querySelectorAll('[class*="hover:border-primary hover:bg-primary hover:text-white"]');
+            const timeSlots = document.querySelectorAll('.grid-cols-3 button');
+
+            timeSlots.forEach(button => {
+                button.addEventListener('click', function() {
+                    if (!this.classList.contains('cursor-not-allowed')) {
+                        timeSlots.forEach(btn => btn.classList.remove('bg-primary', 'text-white', 'border-primary'));
+                        this.classList.add('bg-primary', 'text-white', 'border-primary');
+                    }
+                });
+            });
+
+            const bookingButtons = document.querySelectorAll('button[class*="Book"]');
+            bookingButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    document.getElementById('booking').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+
+    <script id="smooth-scrolling">
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script id="form-interactions">
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('input, textarea');
+
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.classList.add('border-primary');
+                });
+
+                input.addEventListener('blur', function() {
+                    if (!this.value) {
+                        this.classList.remove('border-primary');
+                    }
+                });
+            });
+
+            const dropdowns = document.querySelectorAll('button[class*="justify-between"]');
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', function() {
+                    const icon = this.querySelector('i');
+                    icon.classList.toggle('ri-arrow-down-s-line');
+                    icon.classList.toggle('ri-arrow-up-s-line');
+                });
+            });
+        });
+    </script>
+    <script>
+        ! function(t, e) {
+            var o, n, p, r;
+            e.__SV || (window.posthog = e, e._i = [], e.init = function(i, s, a) {
+                function g(t, e) {
+                    var o = e.split(".");
+                    2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function() {
+                        t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }(p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r);
+                var u = e;
+                for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function(t) {
+                        var e = "posthog";
+                        return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
+                    }, u.people.toString = function() {
+                        return u.toString(1) + ".people (stub)"
+                    }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++) g(u, o[n]);
+                e._i.push([i, s, a])
+            }, e.__SV = 1)
+        }(document, window.posthog || []);
+        posthog.init('phc_t9tkQZJiyi2ps9zUYm8TDsL6qXo4YmZx0Ot5rBlAlEd', {
+            api_host: 'https://us.i.posthog.com',
+            autocapture: false,
+            capture_pageview: false,
+            capture_pageleave: false,
+            capture_performance: {
+                web_vitals: false,
+            },
+            rageclick: false,
+        })
+        window.shareKey = 'fRt1PdNLM6PE2EOu0SQr7Q';
+        window.host = 'readdy.ai';
+    </script>
+    <script src="https://static.readdy.ai/static/share.js"></script>
+</body>
+
+</html>
